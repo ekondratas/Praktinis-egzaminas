@@ -1,14 +1,14 @@
 .forth-part {
     display: flex;
     flex-direction: column;
-    background: #FFFFFF;
+    background: $color1;
     height: 592px;
     text-align: center;
   }
   
   .circle-2 > * {
     background: white;
-    border: 1px solid #E27866;
+    border: 1px solid $color5;
     border-radius: 25px;
     width: 50px;
     height: 50px;
@@ -16,36 +16,33 @@
   }
   
   .award {
-    background: url(../images/award-solid.svg);
-    background-position: center;
-    background-repeat: no-repeat;
+    background: $award;
+    @include svgBackground;
   
   }
   .leaf {
-    background: url(../images/spa-solid.svg);
-    background-position: center;
-    background-repeat: no-repeat;
+    background: $leaf;
+    @include svgBackground;
   }
   .visa {
-    background: url(../images/cc-visa.svg);
-    background-position: center;
-    background-repeat: no-repeat;
+    background: $visa;
+    @include svgBackground;
   }
   
   .divider3 {
-    background: url(../images/divider_orange_u73.svg);
+    background: $divider2;
     width: 64px;
     height: 2px;
   }
   
   .forth-part .first {
     padding: 98px 0 21px 0;
-    color: #212121;
-    font: normal normal 600 36px/43px Montserrat;
+    color: $color8;
+    @include font2;
   }
   
   .forth-part p {
-    font: normal normal normal 14px/20px Montserrat;
+    @include font3;
     color: #86878B;
   }
   
@@ -66,7 +63,7 @@
   }
   
   .forth-part .second h1 {
-    font: normal normal normal 20px/24px Montserrat;
+    @include font9;
     color: #333333;
     width: 50%;
   }

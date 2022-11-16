@@ -2,14 +2,14 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: #FFFFFF;
+    background: $color1;
     height: 591px;
    
 }
   
 .sixt-part h1 {
-    font: normal normal 600 36px/43px Montserrat;
-    color: #1C1C1C;
+    @include font2;
+    color: $color6;
     padding-top: 67px;
 }
   
@@ -45,7 +45,7 @@
 }
 
 .container p {
-    font: normal normal normal 16px/22px Montserrat;
+    @include font12;
     color: #FFFFFF;
     max-width: 273px;
     background: #6696E2;
@@ -69,7 +69,7 @@
 }
 
 .face-1 {
-    background: url(../images/avatar_2_u231.png);
+    background: $face;
     width: 70px;
     height: 70px;
     margin: 10px;
@@ -78,14 +78,14 @@
 }
 
 .disc h1{
-    font: normal normal normal 20px/24px Montserrat;
+    @include font9;
     color: #333333;
     margin: auto;
     padding: 0;
 }
 
 .disc h3{
-    font: normal normal normal 14px/17px Montserrat;
+    @include font13;
     color: #86878B;
     padding-top: 4px;
 }
@@ -119,12 +119,12 @@
 
 .swiper-button-prev, .swiper-button-next {
   display: none;
-  color:#E27866;
+  color:$color5;
 }
 .swiper-button-prev:hover, .swiper-button-next:hover {
   display: none;
   transform: scale(1.2);
-  text-shadow: 0 0 5px #E27866;
+  text-shadow: 0 0 5px $color5;
 }
   
 .swiper-pagination-bullet {
@@ -132,13 +132,13 @@
   opacity: 1;
   width: 10px;
   height: 10px;
-  border: 1px solid #E27866;
+  border: 1px solid $color5;
   transition: 0.3s;
   margin: 0 10px !important;
 }
 
 .swiper-pagination-bullet-active {
-  background: #E27866;
+  background: $color5;
 }
 
 @media (max-width: 1250px){
@@ -150,5 +150,8 @@
 @media (max-width: 650px){
   .swiper1 {
     width: 30%;
+  }
+  .swiper-pagination-bullet {
+    display: none;
   }
 }

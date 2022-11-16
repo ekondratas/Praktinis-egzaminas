@@ -1,29 +1,27 @@
 .first-part {
-    background: #1c1c1c83 url(../images/photo-1480714378408-67cf0d13bc1b.png);
+    background: #1c1c1c83 $fpBackground;
     background-blend-mode: multiply;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    @include background;
     height: 639px;
     padding-top: 72px;
   }
 
   .first-part p {
-    @include color1;
-    font: normal normal 600 16px/23px Montserrat;
+    color: $color1;
+    @include font1
   }
 
   .first-part h1 {
-    @include color1;
-    font: normal normal 600 36px/43px Montserrat;
+    color: $color1;
+    @include font2;
     width: 90%;
   }
 
   .first-part .btn {
-    @include color1;
-    cursor: pointer;;
+    color: $color1;
+    cursor: pointer;
     background: transparent;
-    border: 2px solid #FFFFFF;
+    border: 2px solid $color1;
     outline: none;
     width: 135px;
     height: 42px;
@@ -33,28 +31,28 @@
   .first-part .btn:hover {
     @include cursor;
     color: black;
-    background: #FFFFFF;
+    background: $color1;
     transition: 0.5s;
   }
 
   .first-part-footer {
     display: flex;
     justify-content: space-between;
-    background: #FFFFFF;
+    background: $color1;
     box-shadow: 0px 1px 3px #00000061;
     height: 105px;
   }
 
   .first-part-footer p {
     color: #86878B;
-    font: normal normal normal 14px/20px Montserrat;
+    @include font3;
     margin-top: 5px;
     width: 80%;
   }
 
   .first-part-footer h2 {
     color: #333333;
-    font: normal normal 600 20px/24px Montserrat;
+    @include font4;
   }
 
   .first-part-footer .text {

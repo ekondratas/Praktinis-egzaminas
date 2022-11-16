@@ -3,7 +3,7 @@
     flex-direction: column;
     height: 425px;
     width: 360px;
-    background: #FFFFFF ;
+    background: $color1;
     margin-top: 75px;
     margin-right: 148px;
     border-radius: 5px;
@@ -13,10 +13,10 @@
   
 .form h1 {
     @include fontBold;
+    background: $color3;
     display: flex;
-    background: #F5F5F5;
     flex-direction: row;
-    color: #333333;
+    color: $color4;
     font-size: 20px;
     padding: 17px 49px;
     width: auto;
@@ -25,12 +25,12 @@
   }
 
   .form span {
-    color: #E27866;
+    color: $color5;
   }
 
   .form h2 {
     @include fontBold;
-    color: #1C1C1C;
+    color: $color6;
     font-size: 16px;
     margin-top: 30px;
     margin-left: 50px;
@@ -39,12 +39,12 @@
   .form-input {
     margin:30px 50px 0 50px;
     border: none;
-    border-bottom: 1px solid #D8D8D8;
+    border-bottom: 1px solid $color7;
     outline: none;
   }
   
   .form-input::placeholder {
-    color: #D8D8D8;
+    color: $color7;
     font-size: 12px;
   }
   
@@ -54,8 +54,8 @@
     border-radius: 20px;
     width: 13px;
     height: 13px;
-    accent-color: #41D395;
-    border: 1px solid #41D395;
+    accent-color: $color2;
+    border: 1px solid $color2;
     position: relative;
   
   }
@@ -65,7 +65,7 @@
     position: absolute;
     width: 5px;
     height: 5px;
-    background: #41D395;
+    background: $color2;
     border-radius: 12px;
     top: 0;
     left: 0;
@@ -81,8 +81,8 @@
   }
   
   label {
+    @include font5;
     margin: 0 17px 0 5px;
-    font: normal normal 600 9px/27px Montserrat;
     opacity: 0.5;
   }
 
@@ -100,7 +100,7 @@
    .first-part input[type="submit"] {
     @include color1;
     @include fontBold;
-    background: #41D395;
+    background: $color2;
     font-size: 18px;
     width: 360px;
     height: 68px;

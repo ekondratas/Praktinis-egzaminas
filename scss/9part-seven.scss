@@ -3,26 +3,26 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: #E27866;
+    background: $color5;
     height: 573px;
   }
   
   .part-seven-text h1 {
-    font: normal normal 600 36px/43px Montserrat;
-    color: #FFFFFF;
+    @include font2;
+    color: $color1;
     margin-top: 70px;
   }
   
   .part-seven-text p {
-    font: normal normal normal 14px/20px Montserrat;
-    color: #FFFFFF;
+    @include font3;
+    color: $color1;
     margin: 50px 0 27px 0;
   }
   
   .part-seven .form {
     display: flex;
     flex-direction: column;
-    background: #FFFFFF;
+    background: $color1;
     box-shadow: 0px 5px 6px #00000029;
     border-radius: 5px;
     width: 390px;
@@ -30,8 +30,8 @@
   }
   
   .part-seven input {
-    font: normal normal normal 12px/24px Montserrat;
-    color: #1C1C1C;
+    @include  font14;
+    color: $color6;
     opacity: 1;
   }
   
@@ -44,8 +44,8 @@
   }
   
   .part-seven .send {
-    font: normal normal 600 15px/18px Montserrat;
-    color: #FFFFFF;
+    @include font15;
+    color: $color1;
     width: 158px;
     height: 48px;
     border-radius: 5px;
@@ -57,7 +57,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: #1C1C1C;
+    background: $color6;
     height: 124px;
   }
   
@@ -69,8 +69,8 @@
   }
   
   .last-part-text p {
-    font: normal normal normal 18px/14px Montserrat;
-    color: #FFFFFF;
+    @include font16;
+    color: $color1;
     opacity: 0.5;
     margin: 0;
   }
@@ -90,9 +90,9 @@
 
   .part-seven input[type="submit"] {
     @include cursor;
-    font: normal normal 600 15px/18px Montserrat;
-    background: #41D395;
-    color: #FFFFFF;
+    @include font15;
+    background: $color2;
+    color: $color1;
     width: 158px;
     height: 48px;
     border: none;

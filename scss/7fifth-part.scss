@@ -9,8 +9,8 @@
   }
   
   .fifth .header h1{
-    font: normal normal 600 36px/43px Montserrat;
-    color: #FFFFFF;
+    @include font2;
+    color: $color1;
     padding-top: 97px;
 
   }
@@ -22,7 +22,7 @@
   }
   
   .divider-4 {
-    background: url(../images/divider_orange_u7.png);
+    background: $divider3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,8 +37,8 @@
   }
   
   .header p {
-    font: normal normal normal 14px/20px Montserrat;
-    color: #FFFFFF;
+    @include font3;
+    color: $color1;
     margin: 0;
     padding-bottom: 84px;
   }
@@ -47,9 +47,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font: normal normal normal 20px/24px Montserrat;
-    background: #1C1C1C;
-    color: #FFFFFF;
+    @include font9;
+    background: $color6;
+    color: $color1;
     width: 343px;
     height: 59px;
   }
@@ -62,9 +62,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font: normal normal normal 94px/24px Montserrat;
-    background: #1C1C1C;
-    color: #FFFFFF; 
+    @include font10;
+    background: $color6;
+    color: $color1; 
     width: 343px;
     height: 100px;
   }
@@ -77,8 +77,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font: normal normal normal 14px/24px Montserrat;
-    background: #1C1C1C;
+    @include font11;
+    background: $color6;
     color: rgba(255, 255, 255, 0.5);
     width: 343px;
     height: 40px;
@@ -89,7 +89,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font: normal normal normal 14px/24px Montserrat;
+    @include font11;
     color: #86878B;
     background: white;
     margin: 0;
@@ -105,15 +105,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font: normal normal normal 14px/24px Montserrat;
-    color: #FFFFFF;
-    background: #41D395;
+    @include font11;
+    color: $color1;
+    background: $color2;
     width: 343px;
     height: 40px;
   }
   
   .promotion .gap {
-    background: #41D395;
+    background: $color2;
     width: 343px;
     height: 6px;
   }

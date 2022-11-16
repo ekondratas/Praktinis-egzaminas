@@ -13,3 +13,96 @@
 @mixin cursor {
     cursor: url(../images/description-cursor-icon-with-shadow-32.png), auto;    
 }
+
+@mixin font1 {
+    font: normal normal 600 16px/23px Montserrat;
+}
+
+@mixin font2 {
+    font: normal normal 600 36px/43px Montserrat;
+}
+
+@mixin font3 {
+    font: normal normal normal 14px/20px Montserrat;
+}
+
+@mixin font11 {
+    font: normal normal normal 14px/24px Montserrat;
+}
+
+@mixin font9 {
+    font: normal normal normal 20px/24px Montserrat;
+}
+
+@mixin font12 {
+    font: normal normal normal 16px/22px Montserrat;
+}
+
+@mixin font13 {
+    font: normal normal normal 14px/17px Montserrat;    
+}
+
+@mixin font14 {
+    font: normal normal normal 12px/24px Montserrat;
+}
+
+@mixin font15 {
+    font: normal normal 600 15px/18px Montserrat;
+}
+
+@mixin font16 {
+    font: normal normal normal 18px/14px Montserrat;
+}
+
+@mixin font4 {
+    font: normal normal 600 20px/24px Montserrat;
+}
+
+@mixin font5 {
+    font: normal normal 600 9px/27px Montserrat;
+}
+
+@mixin font6 {
+    font: normal normal 600 36px/40px Montserrat;
+}
+
+@mixin font7 {
+    font: normal normal 600 20px/24px Montserrat;
+}
+
+@mixin font8 {
+    font: normal normal 600 14px/17px Montserrat;
+}
+
+@mixin font10 {
+    font: normal normal normal 94px/24px Montserrat;
+}
+
+@mixin background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@mixin backgroundImg {
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+@mixin svgBackground {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@mixin shadow {
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+@mixin lightenBlend {
+    background-blend-mode: lighten;
+}
+
+@mixin multiplyBlend {
+    background-blend-mode: multiply;
+}

@@ -5,7 +5,7 @@ nav {
     align-items: center;
     flex-direction: row;
     position: fixed;
-    background: #1C1C1C;
+    background: $color6;
     height: 72px;
     width: 100%;
     z-index: 999;
@@ -21,10 +21,10 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: $color1;
     opacity: 69%;
     font-size: 14px;
-    border: 2px solid #1C1C1C;
+    border: 2px solid $color6;
     padding: 25px 0;
 }
 
@@ -35,14 +35,14 @@ nav a {
 nav a:hover {
   opacity: 1;
   margin: 0;
-  border-bottom: 2px solid #E27866;
+  border-bottom: 2px solid $color5;
   padding: 25px 0;
 }
 
 .active {
     opacity: 1;
     margin: 0;
-    border-bottom: 2px solid #E27866;
+    border-bottom: 2px solid $color5;
     padding: 25px 0;
   }
 

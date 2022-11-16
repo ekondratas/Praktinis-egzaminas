@@ -1,0 +1,368 @@
+.second-part {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: $spBackground , linear-gradient(270deg, rgba(102, 150, 226, 0.42), rgba(226, 120, 102, 0.42));
+    background-blend-mode: lighten;
+    @include background;
+    height: 595px;  
+  }
+
+  .second-part button {
+    @include color1;
+    @include fontBold;
+    display: flex;
+    flex-direction: column;
+    margin: 21px;
+    margin-left: 150px;
+    background: #A37169;
+    width: 100px;
+    height: 100px;
+    border: none;
+    @include shadow;
+  }
+
+  .second-part .isijungiau {
+    @include cursor;
+    background: $color5;
+    
+    span {
+      opacity: 1;
+    }
+  }
+
+ 
+
+  .second-part button:hover {
+    @include cursor;
+    background: $color5;
+    
+    span {
+      opacity: 1;
+    }
+  }
+  
+  .second-part button span {
+    margin: auto;
+    transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+    font-size: 14px;
+    opacity: 0.5;
+  }
+  
+  .second-part-text {
+    display: flex;
+    @include color1;
+    margin-left: 50px;
+    margin-right: 150px 
+  }
+  
+  .second-part-text h1 {
+    @include font6;
+    font-size: 36px;
+  }
+  
+  .second-part-text h3, p {
+    @include font3;
+    margin-top: 33px;
+
+  }
+  
+  .second-part-img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: auto;
+    width: 78%;
+  }
+
+  .second-part-imgs1 {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 25px;
+   
+  }
+  
+  // Pirmo tab nuotraukos
+
+  .cabage {
+    display: flex;
+    background: $cabage;
+    @include backgroundImg;
+    @include shadow;
+    width: 168px;
+    height: 160px;   
+    opacity: 0;
+  }
+
+  .salad {
+    display: flex;
+    background: $salad;
+    @include backgroundImg;
+    @include shadow;
+    width: 168px;
+    height: 160px;
+    opacity: 0;
+  }
+  
+  .steps {
+    display: flex;
+    background: $steps;
+    @include backgroundImg;
+    @include shadow;
+    width: 362px;
+    height: 173px;
+    opacity: 0;
+  }
+
+  .cabage span, .salad span, .steps span {
+    @include font7;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    color: $color1;
+    opacity: 0;
+    text-shadow: 0 0 15px blue;
+  }
+  
+  
+  .cabage:hover {
+    background: $cabage, rgba(226, 120, 102, 0.8);
+    @include lightenBlend;
+    @include backgroundImg;
+    transition: 3s;
+
+    &.cabage span {
+      opacity: 1;
+      transform: rotate(360deg);
+      transition: 2s;
+    }
+  }
+
+  .salad:hover {
+    background: $salad, rgba(226, 120, 102, 0.4);
+    @include multiplyBlend;
+    @include backgroundImg;
+    transition: 3s;
+
+    &.salad span {
+      opacity: 1;
+      transform: rotate(360deg);
+      transition: 2s;
+    }
+  }
+
+  .steps:hover {
+    background: $steps, rgba(226, 120, 102, 0.8);
+    @include multiplyBlend;
+    @include backgroundImg;
+    transition: 3s;
+
+    &.steps span {
+      opacity: 1;
+      transform: rotate(360deg);
+      transition: 2s;
+    }
+  }
+
+  // Antro tab nuotraukos
+
+  .laptop {
+    display: flex;
+    background: $laptop;
+    @include background;
+    @include shadow;
+    width: 168px;
+    height: 160px;   
+    opacity: 0;
+  }
+
+  .doit {
+    display: flex;
+    background: $doit;
+    @include background;
+    @include shadow;
+    width: 168px;
+    height: 160px;
+    opacity: 0;
+  }
+  
+  .alvin {
+    display: flex;
+    background: $alvin;
+    @include background;
+    @include shadow;
+    width: 362px;
+    height: 173px;
+    opacity: 0;
+
+  }
+
+  .laptop span, .doit span, .alvin span {
+    @include font7;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    color: $color1;
+    text-shadow: 0 0 15px blue;
+    opacity: 0;
+  }
+  
+  
+  .laptop:hover {
+    background: $laptop, rgba(226, 120, 102, 0.8);
+    @include lightenBlend;
+    @include background;
+    transition: 3s;
+
+    &.laptop span {
+      opacity: 1;
+      transform: rotate(360deg);
+      transition: 2s;
+    }
+  }
+
+  .doit:hover {
+    background: $doit, rgba(226, 120, 102, 0.4);
+    @include lightenBlend;
+    @include background;
+    transition: 3s;
+
+    &.doit span {
+      opacity: 1;
+      transform: rotate(360deg);
+      transition: 2s;
+    }
+  }
+
+  .alvin:hover {
+    background: $alvin, rgba(226, 120, 102, 0.8);
+    @include lightenBlend;
+    @include background;
+    transition: 3s;
+
+    &.alvin span {
+      opacity: 1;
+      transform: rotate(360deg);
+      transition: 2s;
+    }
+  }
+
+  // Trecio tab nuotraukos
+
+  .citrina {
+    display: flex;
+    background: $citrina;
+    @include background;
+    @include shadow;
+    width: 168px;
+    height: 160px;   
+    opacity: 0;
+  }
+
+  .flower {
+    display: flex;
+    background: $flower;
+    @include background;
+    @include shadow;
+    width: 168px;
+    height: 160px;
+    opacity: 0;
+  }
+  
+  .rankinukas {
+    display: flex;
+    background: $rankinukas;
+    @include background;
+    @include shadow;
+    width: 362px;
+    height: 173px;
+    opacity: 0;
+
+  }
+
+  .citrina span, .flower span, .rankinukas span {
+    @include font7;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    color: $color1;
+    opacity: 0;
+    text-shadow: 0 0 15px blue;
+  }
+  
+  
+  .citrina:hover {
+    background: $citrina, rgba(226, 120, 102, 0.8);
+    @include lightenBlend;
+    @include background;
+    transition: 3s;
+
+    &.citrina span {
+      opacity: 1;
+      transform: rotate(360deg);
+      transition: 2s;
+    }
+  }
+
+  .flower:hover {
+    background: $flower, rgba(226, 120, 102, 0.4);
+    @include lightenBlend;
+    @include background;
+    transition: 3s;
+
+    &.flower span {
+      opacity: 1;
+      transform: rotate(360deg);
+      transition: 2s;
+    }
+  }
+
+  .rankinukas:hover {
+    background: $rankinukas, rgba(226, 120, 102, 0.8);
+    @include lightenBlend;
+    @include background;
+    transition: 3s;
+
+    &.rankinukas span {
+      opacity: 1;
+      transform: rotate(360deg);
+      transition: 2s;
+    }
+  }
+
+  .tekstas {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    padding-right: 10px;
+  }
+
+  .tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    opacity: 0;
+  }
+
+  .tabAnimation {
+    opacity: 1;
+    transition: 2s;
+}
+
+  .imgAnimation {
+    opacity: 1;
+    transition: 3s;
+  }
+
+  .tab {
+    display: none;
+  }
+  
+  .block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
