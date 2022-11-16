@@ -1,0 +1,15 @@
+@mixin color1 {
+    color: #FFFFFF;
+}
+
+@mixin fontBold {
+    font-weight: 600;
+}
+
+@mixin noRepeat {
+    background-repeat: no-repeat;
+}
+
+@mixin cursor {
+    cursor: url(../images/description-cursor-icon-with-shadow-32.png), auto;    
+}

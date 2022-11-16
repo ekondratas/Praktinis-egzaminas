@@ -1,0 +1,91 @@
+.forth-part {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    height: 592px;
+    text-align: center;
+  }
+  
+  .circle-2 > * {
+    background: white;
+    border: 1px solid #E27866;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    margin: 0 0 35px 0;
+  }
+  
+  .award {
+    background: url(../images/award-solid.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  
+  }
+  .leaf {
+    background: url(../images/spa-solid.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .visa {
+    background: url(../images/cc-visa.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .divider3 {
+    background: url(../images/divider_orange_u73.svg);
+    width: 64px;
+    height: 2px;
+  }
+  
+  .forth-part .first {
+    padding: 98px 0 21px 0;
+    color: #212121;
+    font: normal normal 600 36px/43px Montserrat;
+  }
+  
+  .forth-part p {
+    font: normal normal normal 14px/20px Montserrat;
+    color: #86878B;
+  }
+  
+  .st-1 {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 65px;
+  }
+  
+  .forth-part .second {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    margin: auto;
+  }
+  
+  .forth-part .second h1 {
+    font: normal normal normal 20px/24px Montserrat;
+    color: #333333;
+    width: 50%;
+  }
+  
+  .forth-part .second p {
+    padding: 0 48px;
+  }
+  
+  #circle-3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .third {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }

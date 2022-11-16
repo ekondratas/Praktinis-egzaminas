@@ -1,0 +1,115 @@
+.first-part .form {
+    display: flex;
+    flex-direction: column;
+    height: 425px;
+    width: 360px;
+    background: #FFFFFF ;
+    margin-top: 75px;
+    margin-right: 148px;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0px 5px 20px #00000029;
+  }
+  
+.form h1 {
+    @include fontBold;
+    display: flex;
+    background: #F5F5F5;
+    flex-direction: row;
+    color: #333333;
+    font-size: 20px;
+    padding: 17px 49px;
+    width: auto;
+    height: 57px;
+    border-radius: 5px;
+  }
+
+  .form span {
+    color: #E27866;
+  }
+
+  .form h2 {
+    @include fontBold;
+    color: #1C1C1C;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+  
+  .form-input {
+    margin:30px 50px 0 50px;
+    border: none;
+    border-bottom: 1px solid #D8D8D8;
+    outline: none;
+  }
+  
+  .form-input::placeholder {
+    color: #D8D8D8;
+    font-size: 12px;
+  }
+  
+  input[type="radio"] {
+    appearance: none;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 13px;
+    height: 13px;
+    accent-color: #41D395;
+    border: 1px solid #41D395;
+    position: relative;
+  
+  }
+  
+  input[type="radio"]::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #41D395;
+    border-radius: 12px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: scale(0);
+    transition: 0.3s;
+  }
+  
+  input[type="radio"]:checked::before {
+    transform: scale(1);
+  }
+  
+  label {
+    margin: 0 17px 0 5px;
+    font: normal normal 600 9px/27px Montserrat;
+    opacity: 0.5;
+  }
+
+  .radio-input {
+    @include fontBold;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    color: #000000;
+    font-size: 9px;
+    margin: 18px 18px 20px 50px;
+  }
+  
+   .first-part input[type="submit"] {
+    @include color1;
+    @include fontBold;
+    background: #41D395;
+    font-size: 18px;
+    width: 360px;
+    height: 68px;
+    border-radius: 0px 0px 5px 5px;
+    border: none;
+  }
+
+  .first-part input[type="submit"]:hover {
+    @include cursor;
+    background: #196646;
+    transition: 0.5s;
+  }

@@ -1,0 +1,164 @@
+.fifth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #6696E2;
+    height: 883px;
+    width: 100%;
+  }
+  
+  .fifth .header h1{
+    font: normal normal 600 36px/43px Montserrat;
+    color: #FFFFFF;
+    padding-top: 97px;
+
+  }
+  
+  .fifth .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .divider-4 {
+    background: url(../images/divider_orange_u7.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    width: 64px;
+    height: 2px;
+  }
+  
+  .promotion {
+    display: flex;
+    width: 100%;
+  }
+  
+  .header p {
+    font: normal normal normal 14px/20px Montserrat;
+    color: #FFFFFF;
+    margin: 0;
+    padding-bottom: 84px;
+  }
+  
+  .promotion h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: normal normal normal 20px/24px Montserrat;
+    background: #1C1C1C;
+    color: #FFFFFF;
+    width: 343px;
+    height: 59px;
+  }
+  
+  .promotion h1:first-of-type {
+    border-radius: 5px 5px 0px 0px;
+  }
+  
+  .promotion h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: normal normal normal 94px/24px Montserrat;
+    background: #1C1C1C;
+    color: #FFFFFF; 
+    width: 343px;
+    height: 100px;
+  }
+  
+  .promotion span {
+    font-size: 35px;
+  }
+  
+  .promotion h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: normal normal normal 14px/24px Montserrat;
+    background: #1C1C1C;
+    color: rgba(255, 255, 255, 0.5);
+    width: 343px;
+    height: 40px;
+    padding: 13px 0 5px 0;
+  } 
+  
+  .promotion p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: normal normal normal 14px/24px Montserrat;
+    color: #86878B;
+    background: white;
+    margin: 0;
+    width: 343px;
+    height: 40px;
+  }
+  
+  .promotion p:last-of-type {
+    border-radius: 0px 0px 5px 5px;
+  }
+  
+  .promotion .gap-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: normal normal normal 14px/24px Montserrat;
+    color: #FFFFFF;
+    background: #41D395;
+    width: 343px;
+    height: 40px;
+  }
+  
+  .promotion .gap {
+    background: #41D395;
+    width: 343px;
+    height: 6px;
+  }
+  
+  .promotion .table {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .swiper2 {
+    max-width: 1200px;
+    padding-bottom: 80px;
+    height: 100%;
+    @include cursor
+  }
+
+  .swiper2 .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .swiper2 .swiper-button-prev, .swiper2 .swiper-button-next {
+    display: block;
+    color:white;
+  }
+  .swiper2 .swiper-button-prev:hover, .swiper2 .swiper-button-next:hover {
+    display: flex;
+    transform: scale(1.2);
+    text-shadow: 0 0 5px white;
+  }
+    
+  .swiper2 .swiper-pagination-bullet {
+    background: none;
+    opacity: 1;
+    width: 70px;
+    height: 5px;
+    border: 1px solid white;
+    border-radius: 0px;
+    transition: 0.3s;
+    margin: 0 1px !important;
+  }
+  
+  .swiper2 .swiper-pagination-bullet-active {
+    background: white;
+  }

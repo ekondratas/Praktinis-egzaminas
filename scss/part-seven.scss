@@ -1,0 +1,108 @@
+.part-seven {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #E27866;
+    height: 573px;
+  }
+  
+  .part-seven-text h1 {
+    font: normal normal 600 36px/43px Montserrat;
+    color: #FFFFFF;
+    margin-top: 70px;
+  }
+  
+  .part-seven-text p {
+    font: normal normal normal 14px/20px Montserrat;
+    color: #FFFFFF;
+    margin: 50px 0 27px 0;
+  }
+  
+  .part-seven .form {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 6px #00000029;
+    border-radius: 5px;
+    width: 390px;
+    height: 314px;
+  }
+  
+  .part-seven input {
+    font: normal normal normal 12px/24px Montserrat;
+    color: #1C1C1C;
+    opacity: 1;
+  }
+  
+  .part-seven .radio-input label{
+    opacity: 0.5;
+  }
+  
+  .part-seven .radio-input {
+    margin-bottom: 20px;
+  }
+  
+  .part-seven .send {
+    font: normal normal 600 15px/18px Montserrat;
+    color: #FFFFFF;
+    width: 158px;
+    height: 48px;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  
+  .last-part-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #1C1C1C;
+    height: 124px;
+  }
+  
+  .last-part-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 135px;
+  }
+  
+  .last-part-text p {
+    font: normal normal normal 18px/14px Montserrat;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin: 0;
+  }
+  
+  .last-part-footer .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    margin-left: 139px;
+  }
+
+  .last-part-footer .icons:hover {
+    @include cursor;
+  }
+
+  .part-seven input[type="submit"] {
+    @include cursor;
+    font: normal normal 600 15px/18px Montserrat;
+    background: #41D395;
+    color: #FFFFFF;
+    width: 158px;
+    height: 48px;
+    border: none;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .part-seven input[type="submit"]:hover {
+    @include cursor;
+    background: #196646;
+    transition: 0.5s;
+  }
